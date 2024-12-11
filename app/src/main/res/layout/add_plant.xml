@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="1dp"
+    android:background="#4FFFFFFF"
+    android:backgroundTint="#54FFFFFF"
+    android:backgroundTintMode="src_in"
+    android:elevation="3dp"
+    android:fadingEdgeLength="2dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/add_plant"
+        android:textColor="@color/black"
+        android:textSize="39sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="629dp"
+        android:layout_marginBottom="90dp"
+        android:background="#63FFFFFF"
+        android:backgroundTint="#08FFFFFF"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="630dp"
+        android:background="#6BFFFFFF"
+        android:backgroundTint="#75FFFFFF"
+        android:elevation="3dp"
+        android:fadingEdgeLength="2dp"
+        android:orientation="vertical"
+        android:paddingTop="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:minWidth="0dp" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/save"
+                android:onClick="newPlant"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/cancelbutton"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxWidth="200dp"
+                android:onClick="cancelButton"
+                android:text="@string/cancel" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_weight="1"
+                android:minWidth="0dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="25dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TextView
+            android:id="@+id/index"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/plantindex"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="10dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/watering_frequency"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="7dp" />
+
+        <EditText
+            android:id="@+id/plantWatering"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="#FFFFFF"
+            android:elevation="3dp"
+            android:ems="10"
+            android:foregroundTint="#494949"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:shadowColor="#FFFFFF"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="15"
+            android:singleLine="false"
+            android:hint="@string/how_many_days_between_waterings"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#BBBBBB"
+            android:textStyle="normal" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/plant_name"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/plantName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="#FFFFFF"
+            android:elevation="3dp"
+            android:ems="10"
+            android:foregroundTint="#494949"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:shadowColor="#FFFFFF"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="15"
+            android:singleLine="false"
+            android:hint="@string/enter_plant_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#BBBBBB"
+            android:textStyle="normal" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/notes"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/plantNotes"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginBottom="2dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:elevation="3dp"
+            android:ems="10"
+            android:foregroundTint="#838383"
+            android:inputType="text"
+            android:shadowColor="#FFFFFF"
+            android:hint="@string/enter_notes_here"
+            android:textColor="#B8B8B8" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/picture_upload"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/uploadpicturebutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="60dp"
+            android:text="@string/upload_a_picture"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:icon="@android:drawable/stat_sys_upload"
+            app:iconPadding="-35dp"
+            app:iconTint="#000000"
+            app:iconTintMode="src_in"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
